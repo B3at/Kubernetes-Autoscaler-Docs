@@ -13,15 +13,15 @@ Downloading all components
 2. From the Demonstrator Pull/Download MongoDB, Data Processing, Data Provider and Device Communication
 3. Get and install helm: <https://helm.sh/docs/intro/install/>
 4. You need the following provided Files (the gitlab-credentials.yaml needs to contain a valid token to fetch the demonstrator images):  
-<a download="gitlab-credentials.yaml" href="/demonstratorDownloads/gitlab-credentials.yaml" title="gitlab-credentials.yaml">gitlab-credentials.yaml
+<a download="gitlab-credentials.yaml" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/gitlab-credentials.yaml" title="gitlab-credentials.yaml">gitlab-credentials.yaml
 </a>  
-<a download="protocomCalibration-pvc.yaml" href="/demonstratorDownloads/protocomCalibration-pvc.yaml" title="protocomCalibration-pvc.yaml">protocomCalibration-pvc.yaml
+<a download="protocomCalibration-pvc.yaml" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/protocomCalibration-pvc.yaml" title="protocomCalibration-pvc.yaml">protocomCalibration-pvc.yaml
 </a>  
-<a download="data-provider-minikube.yaml" href="/demonstratorDownloads/data-provider-minikube.yaml" title="data-provider-minikube.yaml">data-provider-minikube.yaml
+<a download="data-provider-minikube.yaml" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/data-provider-minikube.yaml" title="data-provider-minikube.yaml">data-provider-minikube.yaml
 </a>  
-<a download="device-communication-minikube.yaml" href="/demonstratorDownloads/device-communication-minikube.yaml" title="device-communication-minikube.yaml">device-communication-minikube.yaml
+<a download="device-communication-minikube.yaml" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/device-communication-minikube.yaml" title="device-communication-minikube.yaml">device-communication-minikube.yaml
 </a>  
-<a download="data-processing-minikube.yaml" href="/demonstratorDownloads/data-processing-minikube.yaml" title="data-processing-minikube.yaml">data-processing-minikube.yaml
+<a download="data-processing-minikube.yaml" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/data-processing-minikube.yaml" title="data-processing-minikube.yaml">data-processing-minikube.yaml
 </a>
 
 Setup MongoDB
