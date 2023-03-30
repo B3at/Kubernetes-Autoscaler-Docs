@@ -1,3 +1,9 @@
+---
+layout: default
+title: Minikube Setup Instructions
+nav_order: 3
+---
+
 This is a Step by Step Guide to install minikube and the provided Demonstrator Test Environment. Download Links for the Files will be provided in the Future.
 
 Downloading all components:
