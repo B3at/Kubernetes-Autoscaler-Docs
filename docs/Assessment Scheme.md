@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Assessment Scheme
-nav_order: 4
+nav_order: 5
 ---
 
 Assessment Scheme:
@@ -34,7 +34,7 @@ The categorization of all Autoscalers is conducted using this Assessment Scheme.
 
 Assessment Process:
 -
-The Scheme derived earlier can now be categorized in to different steps of the Assessment Process:   
+The Scheme derived earlier can now be categorized into different steps of the Assessment Process:  
 1-2 Basic research  
 3-4 Autoscaler Setup  
 5-11 Autoscaler Usage  
@@ -42,4 +42,4 @@ The Scheme derived earlier can now be categorized in to different steps of the A
 
 Ideas for the Process:  
 Autoscaler Setup: Basic Autoscaler Setup using the Demonstrator with CPU Trigger.  
-Autoscaler Usage: Add Load Generator and add additional RAM Trigger. Try to use multiple triggers, if supported. 
+Autoscaler Usage: Add Load Generator and add additional RAM Trigger. Try to use multiple triggers, if supported.  

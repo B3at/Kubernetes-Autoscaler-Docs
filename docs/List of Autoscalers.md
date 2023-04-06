@@ -5,6 +5,7 @@ nav_order: 2
 ---
 
 # List of Autoscalers
+
 - [Horizontal Pod Autoscaler (HPA)](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
 - [Vertical Pod Autoscaler (VPA) (Beta)](https://github.com/kubernetes/autoscaler/tree/master/vertical-pod-autoscaler)
 - [Addon Resizer (Beta) (simplified VPA)](https://github.com/kubernetes/autoscaler/tree/master/addon-resizer)
