@@ -24,10 +24,10 @@ The categorization of all Autoscalers is conducted using this Assessment Scheme.
 | 7 | Co | Can configurations be changed dynamically? | Boolean | Fea |
 | 8 | Co | Can configurations be easily reused? (Degree of abstraction) | Numeric 1-5 | Sub |
 | 9 | Ac | How difficult is the use? | Workhours | Obj |
-| 10 | Ac | How well is the Auroscaler documented? | Numeric 1-5 | Sub |
+| 10 | Ac | How well is the Autoscaler documented? | Numeric 1-5 | Sub |
 | 11 | Ac | How helpful is the Feedback on user errors? | Numeric 1-5 | Sub |
 | 12 | Ex | Which explainability methods exist? | List | Fea |
-| 13 | Ex | What query types are supported? (Current decisions, forecast, counterfactuals) | List | Fea |
+| 13 | Ex | What query types are supported? (Current decisions, what if, forecast, counterfactuals) | List | Fea |
 | 14 | Ex | What interfaces are supported? | List | Fea |
 | 15 | Ex | What observability tools can be used? | List | Fea |
 
