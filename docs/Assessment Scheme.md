@@ -38,10 +38,10 @@ Afterwards the SUS Assessment Scheme will be used to give each Autoscaler an add
 Assessment Process:
 -
 The Scheme derived earlier can now be categorized into different steps of the Assessment Process:  
-1-2 Basic research for one hour 
-3-5 Autoscaler Setup
-6-13 Autoscaler Usage
-14-17 Extended explainability research for one hour
+1-2 Basic research for one hour  
+3-5 Autoscaler Setup  
+6-13 Autoscaler Usage  
+14-17 Extended explainability research for one hour  
 
 Autoscaler Setup: Basic Autoscaler Setup using the Demonstrator with CPU Trigger.  
 Autoscaler Usage: Add Load Generator and add additional RAM Trigger. Try to use multiple triggers, if supported.  
