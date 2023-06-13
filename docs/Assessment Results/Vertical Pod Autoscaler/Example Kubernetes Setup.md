@@ -10,7 +10,7 @@ nav_order: 2
 
 In this example setup the data-processing and data-provider components are set to be scaled by VPA on CPU and memory and the device-communication to be only scaled on CPU.  
 
-1. Follow the instructions at [Demonstrator Setup Instructions]({% link Demonstrator Setup Instructions.md %}) but instead use the following yaml files for the demonstrator components (they include resource request values for memory and CPU):  
+1. Follow the instructions at [Demonstrator Setup Instructions]({% link /docs/Demonstrator Setup Instructions.md %}) but instead use the following yaml files for the demonstrator components (they include resource request values for memory and CPU):  
 
    - <a download="data-provider-minikube.yaml" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/VPA/data-provider-minikube.yaml" title="data-provider-minikube.yaml">data-provider-minikube.yaml
     </a>  
