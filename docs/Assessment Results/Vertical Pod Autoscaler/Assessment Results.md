@@ -63,8 +63,7 @@ However, combinations of VPA with HPA or KEDA are possible if using HPA or KEDA 
 | 6 | What triggers can be used for scaling? | Historic and current CPU and memory resource usage |
 | 7 | Can multiple different triggers be used simultaneously? | CPU and memory are used together per default, but those are the only available triggers |
 | 8 | Can configurations be changed dynamically? | Yes, the yaml files can be applied to update a running VPA resource |
-| 9 | Can configurations be easily reused? (Degree of abstraction) | Median Rating: 3.5 out of 5 |
-| | | The target resource name and the min and max resource limits have to be adapted |
+| 9 | Can configurations be easily reused? (Degree of abstraction) | Median Rating: 3.5 out of 5 <br /> The target resource name and the min and max resource limits have to be adapted |
 | 10 | How difficult is the use? | Median Workhours: 2h |
 | 11 | How difficult is the use? | Median Rating: 4 out of 5 |
 | 12 | How well is the Autoscaler documented? | Median Rating: 2.5 out of 5 |
