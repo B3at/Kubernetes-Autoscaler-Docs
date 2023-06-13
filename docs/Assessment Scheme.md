@@ -18,16 +18,16 @@ The categorization of all Autoscalers is conducted using this Assessment Scheme.
 | 1 | Co | What can be scaled on? | List | Fea |
 | 2 | Co | What format is used for writing configurations? | Type | Fea |
 | 3 | Ac | How difficult is the setup? | Workhours | Obj |
-| 4 | Ac | How difficult is the setup? | Numeric 1-5 | Sub |
-| 5 | Ac | Amount of cofiguration steps needed | Numeric | Obj |
+| 4 | Ac | How difficult is the setup? | Numeric 1-5 (5 is very difficult) | Sub |
+| 5 | Ac | Amount of configuration steps needed | Numeric | Obj |
 | 6 | Co | What triggers can be used for scaling? | List | Fea |
 | 7 | Co | Can multiple different triggers be used simultaneously? | Boolean | Fea |
 | 8 | Co | Can configurations be changed dynamically? | Boolean | Fea |
-| 9 | Co | Can configurations be easily reused? (Degree of abstraction) | Numeric 1-5 | Sub |
+| 9 | Co | Can configurations be easily reused? (Degree of abstraction) | Numeric 1-5 (5 is very high reusability) | Sub |
 | 10 | Ac | How difficult is the use? | Workhours | Obj |
-| 11 | Ac | How difficult is the use? | Numeric 1-5 | Sub |
-| 12 | Ac | How well is the Autoscaler documented? | Numeric 1-5 | Sub |
-| 13 | Ac | How helpful is the Feedback on user errors? | Numeric 1-5 | Sub |
+| 11 | Ac | How difficult is the use? | Numeric 1-5 (5 is very difficult) | Sub |
+| 12 | Ac | How well is the Autoscaler documented? | Numeric 1-5 (5 is very well) | Sub |
+| 13 | Ac | How helpful is the Feedback on user errors? | Numeric 1-5 (5 is very helpful) | Sub |
 | 14 | Ex | Which explainability methods exist? | List | Fea |
 | 15 | Ex | What query types are supported? (Current decisions, what if, forecast, counterfactuals) | List | Fea |
 | 16 | Ex | What interfaces are supported? | List | Fea |
