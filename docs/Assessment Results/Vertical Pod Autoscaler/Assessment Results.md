@@ -73,6 +73,8 @@ However, combinations of VPA with HPA or KEDA are possible if using HPA or KEDA 
 | 16 | What interfaces are supported? | Kubectl command line tool (the VPA components are normal kubernetes resources), but no specific kubectl commands for using vpa |
 | 17 | What observability tools can be used? | Prometheus to pass historical resource usage to the Recommender component |
 
+The SUS Scale had an average Result of: 36.25
+
 ## Final summary
 
 The Vertical Pod Autoscaler is currently in a pre-release version (0.13.0) and suffers typical pre-release problems. The documentation lacks some helpful information and on Windows adaptions to the setup script of VPA had to be made for all resources to be correctly installed. Also, the feature set is very limited and the maturity of existing features has to be improved. Especially, the explainability of the VPA components is lacking. Only very basic information on the current scaling decisions are provided (the CPU and memory request targets that are currently set by the VPA), but no information on the current CPU or memory usage, let alone what if or forecast queries.
