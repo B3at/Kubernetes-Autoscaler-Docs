@@ -1,0 +1,13 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata: 
+  name: keda-data-provider
+  namespace: demonstrator
+spec:
+  scaleTargetRef:
+    name: data-provider
+  triggers:
+  - type: cpu
+    metricType: Utilization
+    metadata:
+      value: "60"    

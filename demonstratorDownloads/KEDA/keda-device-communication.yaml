@@ -1,0 +1,13 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata: 
+  name: keda-device-communication
+  namespace: demonstrator
+spec:
+  scaleTargetRef:
+    name: device-communication
+  triggers:
+  - type: cpu
+    metricType: Utilization
+    metadata:
+      value: "60"    

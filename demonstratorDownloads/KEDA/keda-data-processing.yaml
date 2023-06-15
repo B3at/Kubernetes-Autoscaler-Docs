@@ -1,0 +1,20 @@
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata: 
+  name: keda-data-processing
+  namespace: demonstrator
+spec:
+  scaleTargetRef:
+    name: data-processing
+  triggers:
+  - type: rabbitmq
+    metadata:
+      host: amqp://user:k7cwXXdsPk@10.110.18.77:5672//
+      mode: MessageRate
+      value: "100.50"
+      queueName: data-available
+  - type: cpu
+    metricType: Utilization
+    metadata:
+      value: "60"
+    
