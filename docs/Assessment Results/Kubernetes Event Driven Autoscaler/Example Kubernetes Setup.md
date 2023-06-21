@@ -16,11 +16,13 @@ In this example all components are set to be scaled upon CPU triggers. Additiona
    - <a download="device-communication-minikube.yaml" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/KEDA/device-communication-minikube.yaml" title="device-communication-minikube.yaml">device-communication-minikube.yaml
     </a>  
    - <a download="data-processing-minikube.yaml" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/KEDA/data-processing-minikube.yaml" title="data-processing-minikube.yaml">data-processing-minikube.yaml
-    </a> 
+    </a>
 2. Activate the metrics-server addon in minkube (`minikube addons enable metrics-server`)
 3. Apply the KEDA yaml file (`kubectl apply -f https://github.com/kedacore/keda/releases/download/v2.10.1/keda-2.10.1.yaml`)^
 4. Apply the following ScaledObject yaml files to the cluster:
+
     - Data Provider:  
+
     ```
     apiVersion: keda.sh/v1alpha1
     kind: ScaledObject
@@ -36,7 +38,9 @@ In this example all components are set to be scaled upon CPU triggers. Additiona
         metadata:
         value: "60"   
     ```
+
     - Device Communication:  
+
     ```
     apiVersion: keda.sh/v1alpha1
     kind: ScaledObject
@@ -52,7 +56,9 @@ In this example all components are set to be scaled upon CPU triggers. Additiona
         metadata:
         value: "60"      
     ```
+
     - Data Processing:  
+
     ```
     apiVersion: keda.sh/v1alpha1
     kind: ScaledObject

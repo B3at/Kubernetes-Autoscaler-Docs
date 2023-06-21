@@ -12,7 +12,7 @@ For the Kubernetes Event Driven Autoscaler (KEDA) three assessment datapoints ha
 
 The assessment was executed on the most current version of KEDA at the time:
 version 2.10.1.  
-All numeric ratings are median values.
+All numeric ratings are average values.
 
 ## Core functionality
 

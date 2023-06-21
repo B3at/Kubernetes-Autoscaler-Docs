@@ -13,7 +13,7 @@ The results are aggregated in the following.
 
 The assessment was executed on the most current version of VPA at the time:  
 version 0.13.0  
-All numeric ratings are median values.
+All numeric ratings are average values.
 
 ## Core functionality  
 
