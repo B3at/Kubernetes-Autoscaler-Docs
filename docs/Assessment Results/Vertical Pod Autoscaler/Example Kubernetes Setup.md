@@ -27,79 +27,79 @@ In this example setup the data-processing and data-provider components are set t
 6. Apply the following VPA yaml files to the cluster:  
    
    - Data Provider:  
-   ```
+   ```yaml
    apiVersion: autoscaling.k8s.io/v1
    kind: VerticalPodAutoscaler
    metadata:
-   name: data-provider-vpa
-   namespace: demonstrator
+     name: data-provider-vpa
+     namespace: demonstrator
    spec: 
-   targetRef:
+     targetRef:
       apiVersion: "apps/v1"
       kind: Deployment
       name: data-provider
-   updatePolicy:
+     updatePolicy:
       updateMode: "Auto"
-   resourcePolicy:
+     resourcePolicy:
       containerPolicies:
-         - containerName: '*'
-         minAllowed:
+        - containerName: '*'
+          minAllowed:
             cpu: 100m
             memory: 200Mi
-         maxAllowed:
+          maxAllowed:
             cpu: 1
             memory: 500Mi
-         controlledResources: ["cpu", "memory"]
+          controlledResources: ["cpu", "memory"]
    ```
    - Device Communication:  
-   ```
+   ```yaml
    apiVersion: autoscaling.k8s.io/v1
    kind: VerticalPodAutoscaler
    metadata:
-   name: device-communication-vpa
-   namespace: demonstrator
+     name: device-communication-vpa
+     namespace: demonstrator
    spec: 
-   targetRef:
+     targetRef:
       apiVersion: "apps/v1"
       kind: Deployment
       name: device-communication
-   updatePolicy:
+     updatePolicy:
       updateMode: "Auto"
-   resourcePolicy:
+     resourcePolicy:
       containerPolicies:
-         - containerName: '*'
-         minAllowed:
+        - containerName: '*'
+          minAllowed:
             cpu: 100m
             memory: 200Mi
-         maxAllowed:
+          maxAllowed:
             cpu: 1
             memory: 500Mi
-         controlledResources: ["cpu"]
+          controlledResources: ["cpu"]
    ```
    - Data Processing:  
-   ```
+   ```yaml
    apiVersion: autoscaling.k8s.io/v1
    kind: VerticalPodAutoscaler
    metadata:
-   name: data-processing-vpa
-   namespace: demonstrator
+     name: data-processing-vpa
+     namespace: demonstrator
    spec: 
-   targetRef:
+     targetRef:
       apiVersion: "apps/v1"
       kind: Deployment
       name: data-processing
-   updatePolicy:
+     updatePolicy:
       updateMode: "Auto"
-   resourcePolicy:
+     resourcePolicy:
       containerPolicies:
-         - containerName: '*'
-         minAllowed:
+        - containerName: '*'
+          minAllowed:
             cpu: 100m
             memory: 200Mi
-         maxAllowed:
+          maxAllowed:
             cpu: 1
             memory: 500Mi
-         controlledResources: ["cpu", "memory"]
+          controlledResources: ["cpu", "memory"]
    ```
 
 Now the VPA should scale all of the three components of the demonstrator. To test with an example load a load generator can be used.  

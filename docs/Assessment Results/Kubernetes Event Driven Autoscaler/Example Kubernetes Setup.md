@@ -23,62 +23,62 @@ In this example all components are set to be scaled upon CPU triggers. Additiona
 
     - Data Provider:  
 
-    ```
+    ```yaml
     apiVersion: keda.sh/v1alpha1
     kind: ScaledObject
     metadata: 
-    name: keda-data-provider
-    namespace: demonstrator
+      name: keda-data-provider
+      namespace: demonstrator
     spec:
-    scaleTargetRef:
+      scaleTargetRef:
         name: data-provider
-    triggers:
-    - type: cpu
+      triggers:
+      - type: cpu
         metricType: Utilization
         metadata:
-        value: "60"   
+          value: "60"   
     ```
 
     - Device Communication:  
 
-    ```
+    ```yaml
     apiVersion: keda.sh/v1alpha1
     kind: ScaledObject
     metadata: 
-    name: keda-device-communication
-    namespace: demonstrator
+      name: keda-device-communication
+      namespace: demonstrator
     spec:
-    scaleTargetRef:
+      scaleTargetRef:
         name: device-communication
-    triggers:
-    - type: cpu
+      triggers:
+      - type: cpu
         metricType: Utilization
         metadata:
-        value: "60"      
+          value: "60"      
     ```
 
     - Data Processing:  
 
-    ```
+    ```yaml
     apiVersion: keda.sh/v1alpha1
     kind: ScaledObject
     metadata: 
-    name: keda-data-processing
-    namespace: demonstrator
+      name: keda-data-processing
+      namespace: demonstrator
     spec:
-    scaleTargetRef:
+      scaleTargetRef:
         name: data-processing
-    triggers:
-    - type: rabbitmq
+      triggers:
+      - type: rabbitmq
         metadata:
-        host: amqp://user:k7cwXXdsPk@10.110.18.77:5672//
-        mode: MessageRate
-        value: "100.50"
-        queueName: data-available
-    - type: cpu
+          host: amqp://user:k7cwXXdsPk@10.110.18.77:5672//
+          mode: MessageRate
+          value: "100.50"
+          queueName: data-available
+      - type: cpu
         metricType: Utilization
         metadata:
-        value: "60"   
+          value: "60"   
     ```
 
     Now KEDA should scale upon CPU and RabbitMQ. To test this a load generator can be used.
