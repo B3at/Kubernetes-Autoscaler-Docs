@@ -17,7 +17,7 @@ In this example setup the data-processing and data-provider components are set t
    - <a download="device-communication-minikube.yaml" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/VPA/device-communication-minikube.yaml" title="device-communication-minikube.yaml">device-communication-minikube.yaml
     </a>  
    - <a download="data-processing-minikube.yaml" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/VPA/data-processing-minikube.yaml" title="data-processing-minikube.yaml">data-processing-minikube.yaml
-    </a> 
+    </a>
 
 2. Activate the metrics-server addon in minkube (`minikube addons enable metrics-server`)
 3. Clone the [Vertical Pod Autoscaler](https://github.com/kubernetes/autoscaler) Repo on Github.
@@ -25,8 +25,9 @@ In this example setup the data-processing and data-provider components are set t
    Change in autoscaler/vertical-pod-autoscaler/pkg/admission-controller/gencerts.sh the first / in the -subj parameters of openssl to //.
 5. Run ./vertical-pod-autoscaler/hack/vpa-up.sh
 6. Apply the following VPA yaml files to the cluster:  
-   
+
    - Data Provider:  
+
    ```yaml
    apiVersion: autoscaling.k8s.io/v1
    kind: VerticalPodAutoscaler
@@ -51,7 +52,9 @@ In this example setup the data-processing and data-provider components are set t
             memory: 500Mi
           controlledResources: ["cpu", "memory"]
    ```
+
    - Device Communication:  
+
    ```yaml
    apiVersion: autoscaling.k8s.io/v1
    kind: VerticalPodAutoscaler
@@ -76,7 +79,9 @@ In this example setup the data-processing and data-provider components are set t
             memory: 500Mi
           controlledResources: ["cpu"]
    ```
+
    - Data Processing:  
+
    ```yaml
    apiVersion: autoscaling.k8s.io/v1
    kind: VerticalPodAutoscaler
