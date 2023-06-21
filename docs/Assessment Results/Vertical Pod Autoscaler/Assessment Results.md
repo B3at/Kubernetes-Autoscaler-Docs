@@ -12,7 +12,8 @@ For the Vertical Pod Autoscaler (VPA) two assessment-datapoints have been record
 The results are aggregated in the following.  
 
 The assessment was executed on the most current version of VPA at the time:  
-version 0.13.0
+version 0.13.0  
+All numeric ratings are median values.
 
 ## Core functionality  
 
@@ -45,11 +46,11 @@ However, combinations of VPA with HPA or KEDA are possible if using HPA or KEDA 
 
 ## Basic research time spent
 
-- Median: 55min
+- 55min
 
 ## Extemded research time spent
 
-- Median: 40min
+- 40min
 
 ## Main Assessment Scheme  
 
@@ -57,17 +58,17 @@ However, combinations of VPA with HPA or KEDA are possible if using HPA or KEDA 
 |---|---|---|
 | 1 | What can be scaled on? | CPU and memory vertically |
 | 2 | What format is used for writing configurations? | yaml |
-| 3 | How difficult is the setup? | Median Workhours: 2h 53min |
-| 4 | How difficult is the setup? | Median Rating: 4 out of 5 (5 is very difficult) |
+| 3 | How difficult is the setup? | Workhours: 2h 53min |
+| 4 | How difficult is the setup? | Rating: 4 out of 5 (5 is very difficult) |
 | 5 | Amount of configuration steps needed | 4 to 6 steps depending on the OS and version (more details in the example setup) |
 | 6 | What triggers can be used for scaling? | Historic and current CPU and memory resource usage |
 | 7 | Can multiple different triggers be used simultaneously? | CPU and memory are used together per default, but those are the only available triggers |
 | 8 | Can configurations be changed dynamically? | Yes, the yaml files can be applied to update a running VPA resource |
-| 9 | Can configurations be easily reused? (Degree of abstraction) | Median Rating: 3.5 out of 5 <br /> The target resource name and the min and max resource limits have to be adapted |
-| 10 | How difficult is the use? | Median Workhours: 2h |
-| 11 | How difficult is the use? | Median Rating: 4 out of 5 |
-| 12 | How well is the Autoscaler documented? | Median Rating: 2.5 out of 5 |
-| 13 | How helpful is the Feedback on user errors? | Median Rating: 2 out of 5 |
+| 9 | Can configurations be easily reused? (Degree of abstraction) | Rating: 3.5 out of 5 <br /> The target resource name and the min and max resource limits have to be adapted |
+| 10 | How difficult is the use? | Workhours: 2h |
+| 11 | How difficult is the use? | Rating: 4 out of 5 |
+| 12 | How well is the Autoscaler documented? | Rating: 2.5 out of 5 |
+| 13 | How helpful is the Feedback on user errors? | Rating: 2 out of 5 |
 | 14 | Which explainability methods exist? | Visually by using get and describe on vpa, but the feedback is very limited |
 | 15 | What query types are supported? (Current decisions, what if, forecast, counterfactuals) | Current decision: Currently set CPU and memory values with "get vpa". Current target resource request is also visible through "desribe vpa". No other query types, like what ifs or forecasts are supported |
 | 16 | What interfaces are supported? | Kubectl command line tool (the VPA components are normal kubernetes resources), but no specific kubectl commands for using vpa |

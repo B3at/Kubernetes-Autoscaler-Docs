@@ -26,12 +26,81 @@ In this example setup the data-processing and data-provider components are set t
 5. Run ./vertical-pod-autoscaler/hack/vpa-up.sh
 6. Apply the following VPA yaml files to the cluster:  
    
-   - <a download="data-provider-vpa.yaml" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/VPA/data-provider-vpa.yaml" title="data-provider-vpa.yaml">data-provider-vpa.yaml
-    </a>  
-   - <a download="device-communication-vpa.yaml" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/VPA/device-communication-vpa.yaml" title="device-communication-vpa.yaml">device-communication-vpa.yaml
-    </a>  
-   - <a download="data-processing-vpa.yaml" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/VPA/data-processing-vpa.yaml" title="data-processing-vpa.yaml">data-processing-vpa.yaml
-    </a>
+   - Data Provider:  
+   ```
+   apiVersion: autoscaling.k8s.io/v1
+   kind: VerticalPodAutoscaler
+   metadata:
+   name: data-provider-vpa
+   namespace: demonstrator
+   spec: 
+   targetRef:
+      apiVersion: "apps/v1"
+      kind: Deployment
+      name: data-provider
+   updatePolicy:
+      updateMode: "Auto"
+   resourcePolicy:
+      containerPolicies:
+         - containerName: '*'
+         minAllowed:
+            cpu: 100m
+            memory: 200Mi
+         maxAllowed:
+            cpu: 1
+            memory: 500Mi
+         controlledResources: ["cpu", "memory"]
+   ```
+   - Device Communication:  
+   ```
+   apiVersion: autoscaling.k8s.io/v1
+   kind: VerticalPodAutoscaler
+   metadata:
+   name: device-communication-vpa
+   namespace: demonstrator
+   spec: 
+   targetRef:
+      apiVersion: "apps/v1"
+      kind: Deployment
+      name: device-communication
+   updatePolicy:
+      updateMode: "Auto"
+   resourcePolicy:
+      containerPolicies:
+         - containerName: '*'
+         minAllowed:
+            cpu: 100m
+            memory: 200Mi
+         maxAllowed:
+            cpu: 1
+            memory: 500Mi
+         controlledResources: ["cpu"]
+   ```
+   - Data Processing:  
+   ```
+   apiVersion: autoscaling.k8s.io/v1
+   kind: VerticalPodAutoscaler
+   metadata:
+   name: data-processing-vpa
+   namespace: demonstrator
+   spec: 
+   targetRef:
+      apiVersion: "apps/v1"
+      kind: Deployment
+      name: data-processing
+   updatePolicy:
+      updateMode: "Auto"
+   resourcePolicy:
+      containerPolicies:
+         - containerName: '*'
+         minAllowed:
+            cpu: 100m
+            memory: 200Mi
+         maxAllowed:
+            cpu: 1
+            memory: 500Mi
+         controlledResources: ["cpu", "memory"]
+   ```
 
 Now the VPA should scale all of the three components of the demonstrator. To test with an example load a load generator can be used.  
 Details on the currently assigned resources to the pods can be access using `kubectl get vpa -n demonstrator`.

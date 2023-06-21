@@ -11,7 +11,8 @@ nav_order: 1
 For the Kubernetes Event Driven Autoscaler (KEDA) three assessment datapoints have been recorded. The results are aggregated in the following.
 
 The assessment was executed on the most current version of KEDA at the time:
-version 2.10.1.
+version 2.10.1.  
+All numeric ratings are median values.
 
 ## Core functionality
 
@@ -41,11 +42,11 @@ It is not documented, if VPA can be used with KEDA, but VPA should not be used w
 
 ## Basic research time spent
 
-- Average: 60 min
+- 60 min
 
 ## Extended research time spent
 
-- Average: 45 min
+- 45 min
 
 ## Main Assessment Scheme
 
@@ -53,17 +54,17 @@ It is not documented, if VPA can be used with KEDA, but VPA should not be used w
 |---|---|---|
 | 1 | What can be scaled on? | Pods can be scaled on Evenets from 0 to 1, then more pods can be added. |
 | 2 | What format is used for writing configurations? | yaml, helm charts |
-| 3 | How difficult is the setup? | Average Workhours: 1h 30min |
-| 4 | How difficult is the setup? | Average Rating: 3 out of 5 (5 is very difficult) |
+| 3 | How difficult is the setup? | Workhours: 1h 30min |
+| 4 | How difficult is the setup? | Rating: 3 out of 5 (5 is very difficult) |
 | 5 | Amount of configuration steps needed | 3 steps |
 | 6 | What triggers can be used for scaling? | KEDA features a very large and extensive list of Events that can be used for scaling. |
 | 7 | Can multiple different triggers be used simultaneously? | Yes, very easily |
 | 8 | Can configurations be changed dynamically? | Yes, a new yaml file can be reapplied and the ScaledObject should restart. |
 | 9 | Can configurations be easily reused? (Degree of abstraction) | As KEDA has a lot of different Events this has to be differentiated. Same Events and plattform Average Rating: 5, Different Events or Different Plattform: Average 2.5 |
-| 10 | How difficult is the use? | Average Workhours: 2h 20min |
-| 11 | How difficult is the use? | Median Rating: 2.3 out of 5 |
-| 12 | How well is the Autoscaler documented? | Median Rating: 4.3 out of 5 |
-| 13 | How helpful is the Feedback on user errors? | Median Rating: 4 out of 5 |
+| 10 | How difficult is the use? | Workhours: 2h 20min |
+| 11 | How difficult is the use? | Rating: 2.3 out of 5 |
+| 12 | How well is the Autoscaler documented? | Rating: 4.3 out of 5 |
+| 13 | How helpful is the Feedback on user errors? | Rating: 4 out of 5 |
 | 14 | Which explainability methods exist? | As KEDA builds upon HPA the same explainability methods exist |
 | 15 | What query types are supported? (Current decisions, what if, forecast, counterfactuals) | The current decision can be seen through the metric server. It is not really possible to see the Events happening, so why and what if are not supported. |
 | 16 | What interfaces are supported? | Kubectl command line tool |
