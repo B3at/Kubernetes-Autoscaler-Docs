@@ -34,8 +34,8 @@ The most important categories are enlisted in the following. The full assessment
 
 | No | Question/Criteria | HPA | KEDA | VPA |
 |---|---|---|---|---|
-| 4 | How difficult is the setup? |  | 3 out of 5 | 4 out of 5 |
+| 4 | How difficult is the setup? | 2 out of 5 | 3 out of 5 | 4 out of 5 |
 | 6 | What triggers can be used for scaling? | CPU and memory and any custom or external metric (extra effort needed) | CPU and memory and many more with small effort | Only CPU and memory |
-| 11 | How difficult is the use? |  | 2.3 out of 5 | 4 out of 5 |
-| 12 | How well is the Autoscaler documented? |  | 4.3 out of 5 | 2.5 out of 5 |
-|  | SUS Score |  | 80 | 36.25 |
+| 11 | How difficult is the use? | 3 out of 5 | 2.3 out of 5 | 4 out of 5 |
+| 12 | How well is the Autoscaler documented? | 3.6 out of 5 | 4.3 out of 5 | 2.5 out of 5 |
+|  | SUS Score | 75 | 80 | 36.25 |
