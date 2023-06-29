@@ -1,5 +1,5 @@
-title: Kubernetes Autoscaler Comparison
-description: This site will compare different autoscalers for Kubernetes
+title: Kube Autoscaler Comparison
+description: This site will compares different autoscalers for Kubernetes
 theme: just-the-docs
 
 url: https://B3at.github.io/kubernetes-autoscaler-docs

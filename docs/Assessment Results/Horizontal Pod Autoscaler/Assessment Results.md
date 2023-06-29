@@ -56,7 +56,7 @@ This means using them together is redundant, but not impossible.
 
 - 45min
 
-## Extemded research time spent
+## Extended research time spent
 
 - 30min
 

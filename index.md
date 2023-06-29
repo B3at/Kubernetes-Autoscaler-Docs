@@ -3,6 +3,8 @@ title: Home
 layout: home
 nav_order: 1
 ---
+# Kubernetes Autoscaler Comparison
+
 This site was created during a Bachelor Research Project at the [University of Stuttgart]. The Goal of this project is to assess and classify different Autoscalers. As a test environment a [Minikube] installation with the [Demonstrator] was used.
 
 In List of Autoscalers a collection of different Autoscalers is shown.
