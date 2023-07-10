@@ -11,7 +11,7 @@ The idea of this Scheme is to create a basic Assessment structure that can easil
 (Ex) Explainability (Co) Configurability (Ac) Accessibility  
 and different Metric Groups:  
 (Fea) Feature-grounded (Sub) Subjective Human-grounded (Obj) Objective Human-grounded  
-The categorization of all Autoscalers is conducted using this Assessment Scheme. This Assessment Scheme is based on the ideas presented in the paper (TODO: Insert Paper Link here).
+The categorization of all Autoscalers is conducted using this Assessment Scheme. This Assessment Scheme is based on the ideas presented in the paper [Hitchhiker's Guide for Explainability in Autoscaling](https://doi.org/10.1145/3578245.3584728).
 
 | No | Goal | Question/Criteria | Metric | Metric Group |
 |---|---|---|---|---|

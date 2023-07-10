@@ -17,6 +17,8 @@ In Assessment Scheme it is explained how the Assessment was done.
 
 In Assessment Results the results for HPA, VPA and KEDA are shown.
 
+In Palladio Models some example modellings are shown using the SPD language to model and test scaling behavior.
+
 ---
 
 [University of Stuttgart]: https://www.uni-stuttgart.de/
