@@ -4,7 +4,7 @@ title: Assessment Scheme
 nav_order: 5
 ---
 
-Assessment Scheme:
+Assessment Scheme
 =
 
 The idea of this Scheme is to create a basic Assessment structure that can easily be used to categorize different Autoscalers. The questions further presented are categorized in to different Goals:  
@@ -35,13 +35,14 @@ The categorization of all Autoscalers is conducted using this Assessment Scheme.
 
 Afterwards the SUS Assessment Scheme will be used to give each Autoscaler an additional Score.
 
-Assessment Process:
+Assessment Process
 -
 The Scheme derived earlier can now be categorized into different steps of the Assessment Process:  
 1-2 Basic research for one hour  
+Decide on how to scale the different services of the Demonstrator  
 3-5 Autoscaler Setup  
 6-13 Autoscaler Usage  
 14-17 Extended explainability research for one hour  
 
-Autoscaler Setup: Basic Autoscaler Setup using the Demonstrator with CPU Trigger.  
-Autoscaler Usage: Add Load Generator and add additional RAM Trigger. Try to use multiple triggers, if supported.  
+Autoscaler Setup: Basic Autoscaler Setup using the Demonstrator.  
+Autoscaler Usage: Add Load Generator and test more advanced scaling configurations. Try to use multiple triggers, if supported.  

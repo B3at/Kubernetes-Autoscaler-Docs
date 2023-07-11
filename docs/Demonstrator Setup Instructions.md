@@ -3,6 +3,7 @@ layout: default
 title: Demonstrator Setup Instructions
 nav_order: 4
 ---
+# Demonstrator Setup Instructions
 
 This is a Step by Step Guide to install minikube and the provided Demonstrator Test Environment.
 
