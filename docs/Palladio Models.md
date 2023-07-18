@@ -37,3 +37,11 @@ This is a model simulating a very big Server, that has to be logged in to. It co
 Download: <a download="MassiveService.zip" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/MassiveService.zip" title="MassiveService.zip">MassiveService.zip
 </a>
 
+## SimpleWebServer
+
+This model is a standard example of a generic representation of a web server with two databases managed by a load balancer.
+The scaling policy is a horizontal strategy based on the trend of CPU usage.
+When the trend of the minimum goes up, new replicas are created.
+The number of replicas is reduced when the maximum of CPU usage is trending downwards.
+
+Download: <a download="SimpleWebServer.zip" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/SimpleWebServer.zip" title="SimpleWebServer.cip">SimpleWebServer.zip </a>
