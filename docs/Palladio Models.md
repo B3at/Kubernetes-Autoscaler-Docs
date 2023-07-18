@@ -22,3 +22,18 @@ This is an adaption of the SingleService model. It uses two Nodes instead of a s
 
 Download: <a download="SingleServiceDistributed.zip" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/SingleServiceDistributed.zip" title="SingleServiceDistributed.zip">SingleServiceDistributed.zip
 </a>
+
+## CalculationService
+
+This is a model simulating a Calculation Server. It consists of a Web component, that sends the desired values that should be calculated to the Server. The Server now calcultes and sends the result back to the Web. The model includes an SPD scaling policy that scales in steps. If the Trend of the CPU Utilization is at MAX, one more replica is created, if it is at MIN, a replica is deleted.
+
+Download: <a download="SingleServiceDistributed.zip" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/CalculationService.zip" title="CalculationService.zip">CalculationService.zip
+</a>
+
+## MassiveServce
+
+This is a model simulating a very big Server, that has to be logged in to. It consists of a Web component, which sends the Log In request to the Server. This Server now tries to authenticate the Log In using the Database Component. The SPD scaling policy doubles the current number of elements if the current CPU Utilization is greater or equal to MAX, it halves the current number of elements, if the current CPU Utilization is lesser or equal to AVERAGE.
+
+Download: <a download="SingleServiceDistributed.zip" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/MassiveService.zip" title="MassiveService.zip">MassiveService.zip
+</a>
+
