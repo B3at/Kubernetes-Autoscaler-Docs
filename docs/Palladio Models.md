@@ -30,7 +30,7 @@ This is a model simulating a Calculation Server. It consists of a Web component,
 Download: <a download="CalculationService.zip" href="/Kubernetes-Autoscaler-Docs/demonstratorDownloads/CalculationService.zip" title="CalculationService.zip">CalculationService.zip
 </a>
 
-## MassiveServce
+## MassiveService
 
 This is a model simulating a very big Server, that has to be logged in to. It consists of a Web component, which sends the Log In request to the Server. This Server now tries to authenticate the Log In using the Database Component. The SPD scaling policy doubles the current number of elements if the current CPU Utilization is greater or equal to MAX, it halves the current number of elements, if the current CPU Utilization is lesser or equal to AVERAGE.
 
